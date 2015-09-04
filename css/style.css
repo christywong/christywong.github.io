@@ -476,7 +476,6 @@ ol.type li a.active { font-weight: 700; }
 /* EXPERIENCEEE Section */
 #tf-testimonials{
 	background: url(../img/waves.jpg);
-	/*background: url(../img/mural.jpg);*/
 	background-size: cover;
 	background-position: center;
 	background-attachment: fixed;
