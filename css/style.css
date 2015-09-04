@@ -472,9 +472,11 @@ ol.type li a.active { font-weight: 700; }
 	border-radius: 50%;
 	color: #5ca5b4;
 }
-/* Testimonials Section */
+
+/* EXPERIENCEEE Section */
 #tf-testimonials{
-	background: url(../img/waves.jpg);
+	/*background: url(../img/waves.jpg);*/
+	background: url(../img/mural.jpg);
 	background-size: cover;
 	background-position: center;
 	background-attachment: fixed;
