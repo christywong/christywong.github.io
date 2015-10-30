@@ -87,7 +87,7 @@
         </div>
     </div>
 
-    <!-- About Us Page
+    <!-- About Me Page
     ==========================================-->
     <div id="tf-about">
         <div class="container">
@@ -100,13 +100,13 @@
                         <a href="#">
                             <img src="img/resume-icon-new-2.png" style="width: 65x; height: 65px; margin-left: 40px; margin-right: 50px; margin-top: 25px">
                         </a>
-                        <a href="#">
+                        <a href="https://www.linkedin.com/in/christywwong">
                             <img src="img/linkedin-icon.png" onmouseover="this.src='img/linkedin-icon-blue.png'" onmouseout="this.src='img/linkedin-icon.png'" style="width: 75px; height: 75px; margin-right: 50px; margin-top: 25px">
                         </a>
-                        <a href="#">
+                        <a href="https://github.com/christywong">
                             <img src="img/github-icon.png" onmouseover="this.src='img/github-icon-blue.png'" onmouseout="this.src='img/github-icon.png'" style="width: 75px; height: 75px; margin-right: 50px; margin-top: 25px">
                         </a>
-                        <a href="#">
+                        <a href="https://instagram.com/wongchristy_/">
                             <img src="img/instagram-icon.png" onmouseover="this.src='img/instablue.png'" onmouseout="this.src='img/instagram-icon.png'" style="width: 75px; height: 75px; margin-right: 50px; margin-top: 25px">
                         </a>
                         </center>
@@ -120,10 +120,12 @@
                             <div class="clearfix"></div>
                         </div>
                         <p class="intro" style="font-size: 22px; color: #5ca5b4"> <em> hi there, </em>  </p>
-                        <p> I'm Christy and I was born & raised in the amazing city of San Francisco. Currently, I'm going into my third year as a Computer Science major at the University of California, San Diego. My interests lie in web design & development. Although I'm just beginning to learn more about it, I hope to be able to create aesthetically pleasing designs in future. I can't wait to further pursue this interest. </p>
+                        <p> I'm Christy and I was born & raised in the amazing city of San Francisco. Currently, I'm a third year Computer Science major and Cognitive Science minor at the University of California, San Diego. My interests lie in web design & development. Although I'm just beginning to learn more about it, I hope to be able to create aesthetically pleasing designs in future. I can't wait to further pursue this interest. </p>
                         <br><br>
                         <p style="font-size: 18px; color: #5ca5b4; text-align: center"> fashion, travel, food enthusiast <span style="font-size: 24px">✌</span> </p>
-                        <img src="img/collage2.png" style="width: 600px; height: 300px"> 
+                        <a href="https://instagram.com/wongchristy_/">
+                            <img src="img/collage2.png" style="width: 600px; height: 300px"> 
+                        </a>
                     </div>
                 </div>
             </div>
@@ -137,6 +139,7 @@
             <div class="container">
                 <div class="section-title center">
                     <h2><strong>S k i l l s</strong></h2>
+                    <p>(In Progress)</p>
                     <div class="line">
                         <hr>
                     </div>
@@ -169,7 +172,6 @@
                             <div class="caption">
                                 <h3>Web Design</h3>
                                 <p>HTML, CSS, Javascript</p>
-                                <p> (in-progress) </p>
                             </div>
                         </div>
                     </div>
@@ -220,7 +222,7 @@
         </div>
     </div>
 
-    <!-- EXPERIENCEEEEE Section
+    <!-- Experience Section
     ==========================================-->
     <div id="tf-testimonials" class="text-center">
         <div class="overlay">
@@ -237,7 +239,7 @@
                             <div class="item">
                                 <h5 style="font-size: 25px"> CSE Tutor </h5>
                                 <h5 style="font-weight: 400; font-size: 18px; text-transform: none"> UCSD Computer Science & Engineering Department </h5>
-                                <p><strong>January 2015 - March 2015</strong> | La Jolla, CA</p>
+                                <p><strong>January 2015 - Present</strong> | La Jolla, CA</p>
                             </div>
 
                             <div class="item">
@@ -271,26 +273,27 @@
                         <div class="clearfix"></div>       
                     </div>
 
-                    <form>
+                    <form method="post" action="contact.php">
                         <div class="row" style="display: inline-block">
                             <!-- <div class="col-md-6"> -->
                                 <div class="form-group">
                                     <!-- <label for="exampleInputName1">Name</label> -->
-                                    <input type="name" style="width: 500px" class="form-control" id="exampleInputName1" placeholder="Name">
+                                    <input type="name" name="cf_name" style="width: 500px" class="form-control" id="exampleInputName1" placeholder="Name">
                                 </div>
                             <!-- </div> -->
                             <!-- <div class="col-md-6"> -->
                                 <div class="form-group">
                                     <!-- <label for="exampleInputEmail1">Email address</label> -->
-                                    <input type="email" style="width: 500px" class="form-control" id="exampleInputEmail1" placeholder="Email">
+                                    <input type="email" name="cf_email" style="width: 500px" class="form-control" id="exampleInputEmail1" placeholder="Email">
                                 </div>
                             <!-- </div> -->
                                  <div class="form-group">
                                     <!-- <label for="exampleInputEmail1">Message</label>-->
-                                    <textarea class="form-control" rows="5" cols="50" placeholder="Message"></textarea>
+                                    <textarea class="form-control" name="cf_message" rows="5" cols="50" placeholder="Message"></textarea>
                                  </div>
                         
-                                 <button type="submit" class="btn tf-btn btn-default">Send <span style="font-size: 16px"> ✉ </span> </button>
+                                 <!-- <button type="submit" class="btn tf-btn btn-default">Send <span style="font-size: 16px"> ✉ </span> </button>-->
+                                 <input type="submit" value="Send" />
                         </div>
                     </form>
 
@@ -304,9 +307,9 @@
         <div class="container">
             <div class="fnav" style="text-align: center">
                 <ul class="footer-social">
-                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                    <li><a href="#"><i class="fa fa-github"></i></a></li>
-                    <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/christywwong"><i class="fa fa-linkedin"></i></a></li>
+                    <li><a href="https://github.com/christywong"><i class="fa fa-github"></i></a></li>
+                    <li><a href="https://instagram.com/wongchristy_/"><i class="fa fa-instagram"></i></a></li>
                 </ul>
                 <p style="color: #fff">Copyright © 2015. Christy Wong</p>
             </div>
