@@ -366,7 +366,7 @@ img.img-circle.team-img {
 }
 /* Gallery Section 
 ==============================*/
-#tf-works{
+#tf-progress{
 	padding: 80px 0;
 }
 .categories{ 
@@ -375,7 +375,7 @@ img.img-circle.team-img {
 ul.cat li{
 	display: inline-block;
 }
-#tf-works li.pull-right {
+#tf-progress li.pull-right {
 	margin-top: 10px;
 }
 ol.type li{
@@ -467,7 +467,7 @@ ol.type li a.active { font-weight: 700; }
 .hover-bg:hover .hover-text{
 	opacity: 1;
 }
-#tf-works i.fa {
+#tf-progress i.fa {
 	height: 35px;
 	width: 35px;
 	border: 3px solid #5ca5b4;
@@ -476,8 +476,9 @@ ol.type li a.active { font-weight: 700; }
 	border-radius: 50%;
 	color: #5ca5b4;
 }
-/* Testimonials Section // FEATURESSSSSSSS */
-#tf-testimonials{
+
+/* Features */
+#tf-features{
 	/*background: url(../img/geisel-plain.png);
 	background-size: cover;
 	background-position: center;
@@ -486,7 +487,7 @@ ol.type li a.active { font-weight: 700; }
 	color: #ffffff;
 }
 
-#tf-testimonials .overlay{
+#tf-features .overlay{
 	background: -moz-linear-gradient(top,  rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.73) 17%, rgba(0,0,0,0.66) 35%, rgba(0,0,0,0.55) 62%, rgba(0,0,0,0.4) 100%); /* FF3.6+ */
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0.8)), color-stop(17%,rgba(0,0,0,0.73)), color-stop(35%,rgba(0,0,0,0.66)), color-stop(62%,rgba(0,0,0,0.55)), color-stop(100%,rgba(0,0,0,0.4))); /* Chrome,Safari4+ */
 	background: -webkit-linear-gradient(top,  rgba(0,0,0,0.8) 0%,rgba(0,0,0,0.73) 17%,rgba(0,0,0,0.66) 35%,rgba(0,0,0,0.55) 62%,rgba(0,0,0,0.4) 100%); /* Chrome10+,Safari5.1+ */
@@ -497,16 +498,16 @@ ol.type li a.active { font-weight: 700; }
 	padding: 80px 0;
 	background-attachment: fixed;
 }
-#testimonial {
+#features {
 	padding: 30px 0;
 }
-#testimonial .item{
+#features .item{
     display: block;
     width: 100%;
     height: auto;
 }
 
-#testimonial .item p {
+#features .item p {
 	font-weight: 400;
 	margin: 30px 0;
 	color: #d1d1d1;
