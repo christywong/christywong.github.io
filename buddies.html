@@ -37,6 +37,14 @@
 
     <script type="text/javascript" src="js/modernizr.custom.js"></script>
 
+    <!-- Fancybox -->
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <link rel="stylesheet" href="/fancybox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+    <script type="text/javascript" src="/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+    <link rel="stylesheet" href="/fancybox/source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" type="text/css" media="screen" />
+    <script type="text/javascript" src="/fancybox/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
+
+
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -45,6 +53,29 @@
     <![endif]-->
   </head>
   <body>
+
+    <script>
+    $(document).ready(function() {
+        $(".fancybox").fancybox();
+
+    $(".fancybox-thumb").fancybox({
+        prevEffect  : 'none',
+        nextEffect  : 'none',
+        helpers : {
+            title   : {
+                type: 'outside'
+            },
+            thumbs  : {
+                width   : 50,
+                height  : 50
+            }
+        }
+    });
+
+    });       
+    
+</script>
+
     <!-- Navigation
     ==========================================-->
     <nav id="tf-menu" class="navbar navbar-default navbar-fixed-top">
@@ -115,9 +146,9 @@
                         </div>
 
                         <h4><strong>Deliverables</strong></h4>
-                        <a href="http://icogsci1.ucsd.edu/~cg187aval/BreadButter/login.html">
+                        <!-- <a href="http://icogsci1.ucsd.edu/~cg187aval/BreadButter/login.html">
                             <h5 style="text-transform: lowercase"> Website </h5>
-                        </a>
+                        </a> -->
                         <a href="https://prezi.com/2reft-mmwy5a/studybuddies-presentation/?utm_campaign=share&utm_medium=copy">
                             <h5 style="text-transform: lowercase"> Final Presentation </h5>
                         </a>
@@ -222,11 +253,17 @@
                 <div class="col-sm-6 col-md-3 col-lg-3 logo">
                     <div class="portfolio-item">
                         <div class="hover-bg">
-                            <a href="#">
+                            <!--<a href="#">
                                 <div class="hover-text">
                                     <h4>Brainstorming Logos</h4>
                                 </div>
                                 <img src="img/logos.png" class="img-responsive" alt="...">
+                            </a> -->
+                            <a class="fancybox-thumb" rel="fancybox-thumb gallery2" href="img/logos.png" title="brainstorming logos">
+                                <div class="hover-text">
+                                    <h4>Brainstorming Logos</h4>
+                                </div>
+                                <img src="img/logos-thumbnail.png" alt="" />
                             </a>
                         </div>
                     </div>
