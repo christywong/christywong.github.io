@@ -188,10 +188,6 @@
                             <h2 style="text-align: center; margin-top: 50px; margin-bottom: 30px; color: #5ca5b4"><strong>Get in Touch</strong></h2>
                             <img src="img/lemongrass/getintouch.png" style="width: 800px">
 
-                            <!--<h2 style="text-align: center; margin-bottom: 30px; color: #5ca5b4"> <strong> Solution </strong> </h2>
-                            <h4 style="text-transform: none"> <strong> StudyBuddies, a web-based application, allows UCSD students to create and join study groups for the courses they are taking. Through this, students can meet new people, help one another academically, and develop better study habits. </strong> </h4>-->
-                            <!--<img src="img/lemongrass/logo.png" style="width: 800px; height: 90px">
-                            <div class="clearfix"></div>-->
                         </div>
                     </div>
                 </div>
@@ -442,6 +438,17 @@
     <!-- Javascripts
     ================================================== -->
     <script type="text/javascript" src="js/main-projects.js"></script>
+
+    <script type="text/javascript">
+        divisor = document.getElementById("divisor");
+        slider = document.getElementById("slider");
+        function moveDivisor() {
+            divisor.style.width = slider.value+"%";
+        }
+        window.onload = function() {
+            moveDivisor();
+        };
+    </script>
 
     <!--<script type="text/javascript">
         $(document).ready(function() {     
