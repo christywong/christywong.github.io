@@ -588,6 +588,14 @@ button.btn.tf-btn.btn-default {
 	outline: none;
 	outline-offset: none;
 }
+
+/* Descriptions on the side of images */
+.info h6 {
+	font-size: 17px;
+}
+.info ul li {
+	list-style-position:inside;
+}
 /* Footer */
 nav#footer{
 	background: #222222;
