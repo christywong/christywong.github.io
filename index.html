@@ -1,433 +1,560 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Basic Page Needs
-    ================================================== -->
-    <meta charset="utf-8">
-    <!--[if IE]><meta http-equiv="x-ua-compatible" content="IE=9" /><![endif]-->
+<head>
+	<meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Christy Wong</title>
-    <meta name="description" content="Portfolio">
-    <meta name="author" content="Christy">
-    
-    <!-- Favicons
-    ================================================== -->
-    <!--<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">-->
-    <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png">
+    <meta name="author" content="Christy Wong">
 
-    <!-- Bootstrap -->
-    <!-- <link rel="stylesheet" type="text/css"  href="css/bootstrap.css"> -->
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="fonts/font-awesome/css/font-awesome.css">
-
-    <!-- Slider
-    ================================================== -->
-    <link href="css/owl.carousel.css" rel="stylesheet" media="screen">
-    <link href="css/owl.theme.css" rel="stylesheet" media="screen">
-
-    <!-- Stylesheet
-    ================================================== -->
-    <link rel="stylesheet" type="text/css"  href="css/style.css">
-    <link rel="stylesheet" type="text/css" href="css/responsive.css">
-
+    <!-- Stylesheets -->
+    <link rel="stylesheet" type="text/css" href="styles/skeleton.css">
+    <link rel="stylesheet" type="text/css" href="styles/normalize.css">
+    <link rel="stylesheet" type="text/css" href="styles/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
     <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,700,300,600,800,400' rel='stylesheet' type='text/css'>
+</head>
+<body>
+	<!-- Header -->
+	<div id="header">
+		<h1 id="title">CHRISTY WONG</h1>
+		<h5><em>aspiring</em> front-end developer & ui/ux designer</h5>
+	</div>
 
-    <!-- <script type="text/javascript" src="js/modernizr.custom.js"></script> -->
+	<hr>
 
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-  </head>
-  <body>
-    <!-- Navigation
-    ==========================================-->
-    <nav id="tf-menu" class="navbar navbar-default navbar-fixed-top">
-      <div class="container">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="index.html"> Christy Wong </a>
-        </div>
+	<!-- About -->
+	<div id="about">
+		<div class="container">
+			<div class="row">
+				<div class="six columns" id="about-left">
+					<img src="imgs/me.jpg" id="photo-me">
+					<a href="imgs/ChristyWong_Resume6.pdf">
+						<i class="fa fa-2x fa-file-text-o social-icons" aria-hidden="true"></i>
+					</a>
+					<a href="https://www.linkedin.com/in/christywwong">
+						<i class="fa fa-2x fa-linkedin-square social-icons" aria-hidden="true"></i>
+					</a>
+					<a href="https://github.com/christywong">
+						<i class="fa fa-2x fa-github-square social-icons" aria-hidden="true"></i>
+					</a>
+					<a href="https://instagram.com/wongchristy_/">
+						<i class="fa fa-2x fa-instagram social-icons" aria-hidden="true"></i>
+					</a>
+					<h4 id="contact-title">contact me</h4>
+					<p>Currently based in: <strong>La Jolla, CA</strong><br>Email: <strong>cww016@ucsd.edu</strong></p>
+				</div>
+				<div class="six columns" id="about-right">
+					<h4>about me</h4>
+					<h5 id="hi"><em>hello!</em></h5>
+					<p>I'm Christy and I was born & raised in the amazing city of San Francisco. Currently, I'm a fourth year Computer Science major and Cognitive Science minor at the University of California, San Diego. My interests lie in web design & development, as well as creating user-friendly, yet aesthetically pleasing, experiences. I know I still have a lot to learn, but I'm excited to continue improving and refining my skills!</p>
+					<p id="blurb">fashion, travel, & food enthusiast <span style="font-size: 14px">✌</span></p>
+					<a href="https://instagram.com/wongchristy_/">
+					    <img id="collage" src="imgs/collage.png"> 
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
 
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="#tf-home" class="page-scroll" id="home-nav">Home</a></li>
-            <li><a href="#tf-about" class="page-scroll" id="about-nav">About</a></li>
-            <li><a href="#tf-skills" class="page-scroll" id="skills-nav">Skills</a></li>
-            <!-- <li><a href="#tf-services" class="page-scroll">Services</a></li> -->
-            <li><a href="#tf-works" class="page-scroll" id="portfolio-nav">Portfolio</a></li>
-            <li><a href="#tf-experience" class="page-scroll" id="experience-nav">Experience</a></li>
-            <!--<li><a href="#tf-contact" class="page-scroll" id="contact-nav">Contact</a></li>-->
-          </ul>
-        </div><!-- /.navbar-collapse -->
-      </div><!-- /.container-fluid -->
-    </nav>
+	<hr>
 
-    <!-- Home Page
-    ==========================================-->
-    <div id="tf-home" class="text-center">
-        <div class="overlay">
-            <div class="content">
-                <h1><strong><span class="color" style="color: #5ca5b4; font-size: 72px">Christy Wong</span></strong></h1>
-                <!-- <h3>SITE: WORK IN PROGRESS</h3> -->
-                <!--<p class="lead"> <strong> programmer </strong> (in-progress) with an interest in <strong> UX design </strong></p>-->
-                <p class="lead"><i>aspiring </i><strong>Front-end Developer | UI/UX Designer</strong></p>
-                <!--<p class="lead">aspiring <strong>Front-end Developer</strong> & <strong>UX Designer</strong></p>-->
-                <a href="#tf-about" class="fa fa-angle-down page-scroll"></a>
-            </div>
-        </div>
-    </div>
+	<!-- Projects -->
+	<div id="project-list">
+		<div class="container">
+			<div class="row">
+				<h4>projects</h4>
+			</div>
 
-    <!-- About Me 
-    ==========================================-->
-    <div id="tf-about">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <!-- Photo of me -->
-                    <img src="img/me.jpg" class="img-responsive">
-                    <div class="links" display="inline-block">
-                        <center>
-                        <a href="img/ChristyWong_Resume5.pdf">
-                            <img src="img/resume-icon-new-2.png" style="width: 65x; height: 65px; margin-left: 40px; margin-right: 50px; margin-top: 25px">
-                        </a>
-                        <a href="https://www.linkedin.com/in/christywwong">
-                            <img src="img/linkedin-icon.png" onmouseover="this.src='img/linkedin-icon-blue.png'" onmouseout="this.src='img/linkedin-icon.png'" style="width: 75px; height: 75px; margin-right: 50px; margin-top: 25px">
-                        </a>
-                        <a href="https://github.com/christywong">
-                            <img src="img/github-icon.png" onmouseover="this.src='img/github-icon-blue.png'" onmouseout="this.src='img/github-icon.png'" style="width: 75px; height: 75px; margin-right: 50px; margin-top: 25px">
-                        </a>
-                        <a href="https://instagram.com/wongchristy_/">
-                            <img src="img/instagram-icon.png" onmouseover="this.src='img/instablue.png'" onmouseout="this.src='img/instagram-icon.png'" style="width: 75px; height: 75px; margin-right: 50px; margin-top: 25px">
-                        </a>
-                        </center>
-                    </div>
-                    <div display="inline-block">
-                        <center>
-                            <h2 style="padding-bottom:10px; padding-top:25px"><strong>Contact Me</strong></h2>
-                            <h4> <strong>Current Location:</strong> La Jolla, CA </h4>
-                            <h4 style="padding-bottom:30px"> <strong>Email:</strong> cww016@ucsd.edu </h4>
-                        </center>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="about-text" style="text-align: center">
-                        <div class="section-title">
-                            <h2 style="text-align: center; margin-bottom: 20px"> <strong> About Me </strong> </h2>
-                            <!-- <hr> -->
-                            <div class="clearfix"></div>
-                        </div>
-                        <p class="intro" style="font-size: 22px; color: #5ca5b4"> <em> hi there, </em>  </p>
-                        <p> I'm Christy and I was born & raised in the amazing city of San Francisco. Currently, I'm a fourth year Computer Science major and Cognitive Science minor at the University of California, San Diego. My interests lie in web design & development, and I recently discovered the incredible world of human computer interaction and user experience. Although I'm just beginning to learn more about these topics, I hope to be able to create user-friendly, yet aesthetically pleasing, designs in the future. I know I have a lot to learn, but I'm excited to see what I can do and be able to further pursue this interest! </p>
-                        <br><br>
-                        <p style="font-size: 18px; color: #5ca5b4; text-align: center"> fashion, travel, food enthusiast <span style="font-size: 24px">✌</span> </p>
-                        <a href="https://instagram.com/wongchristy_/">
-                            <img id="insta-collage" src="img/collage2.png" style="width: 600px; height: 300px"> 
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+			<div class="row">
+				<div class="six columns">
+					<div class="project">
+						<img src="imgs/roadrunner/roadrunner-mockup.png" alt="RoadRunner Mockup" class="project-imgs">
+						<div class="overlay">
+							<div class="hover-text">
+								<h5>RoadRunner</h5>
+								<p>current project (in progress)</p>
+								<a href="https://github.com/emyew/ACME" class="button">View Source</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="six columns">
+					<div class="project">
+						<img src="imgs/actordex/actordex-mockup.png" alt="ActorDex Mockup" class="project-imgs" id="actordex-mockup">
+						<div class="overlay">
+							<div class="hover-text">
+								<h5>ActorDex</h5>
+								<p>view + save a collection of your favorite actors</p>
+								<a href="https://actor-dex-final.firebaseapp.com/" class="button">Demo</a>
+								<a href="https://github.com/christywong/actordex" class="button">View Source</a>
+								<!-- <a href="#" class="button">Read More</a> -->
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 
-    <!-- SKILLS
-    ==========================================-->
-    <div id="tf-skills" class="text-center">
-        <div class="overlay">
-            <div class="container">
-                <div class="section-title center">
-                    <h2><strong>S k i l l s</strong></h2>
-                    <p style="padding-top: 10px; font-size: 16px">(In Progress)</p>
-                    <div class="line">
-                        <hr>
-                    </div>
-                </div>
+			<div class="row">
+				<div class="six columns">
+					<div class="project">
+						<img src="imgs/bucket/bucket-mockup.png" alt="Bucket Mockup" class="project-imgs" id="bucket-mockup">
+						<div class="overlay">
+							<div class="hover-text">
+								<h5>Bucket</h5>
+								<p>collaboratively create bucket lists</p>
+								<a href="#" class="button" id="bucket-btn">Read More</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="six columns">
+					<div class="project">
+						<img src="imgs/mopa/mopa.jpg" alt="MOPA" class="project-imgs" id="mopa-img">
+						<div class="overlay">
+							<div class="hover-text">
+								<h5>MOPA</h5>
+								<p>improving museum engagement</p>
+								<a href="#" class="button" id="mopa-btn">Read More</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 
-                <div id="team" class="owl-carousel owl-theme row" style="margin-left: 12.5%">
-                    <div class="item">
-                        <div class="thumbnail">
-                            <img src="img/lightbulb2.png" alt="..." class="img-circle team-img">
-                            <div class="caption">
-                                <h3>Programming</h3>
-                                <p>Java, C, C++</p>
-                            </div>
-                        </div>
-                    </div>
+			<div class="row">
+				<div class="six columns">
+					<div class="project">
+						<img src="imgs/lemongrass/lemongrass-mockup.png" alt="Lemongrass Mockup" class="project-imgs" id="lemongrass-mockup">
+						<div class="overlay">
+							<div class="hover-text">
+								<h5>Lemongrass</h5>
+								<p>website redesign + mobile design</p>
+								<a href="http://lemongrassplates.com/" class="button">Website</a>
+								<a href="https://github.com/christywong/lemongrass" class="button" id="lemongrass-btn">View Source</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="six columns project">
+				</div>
+			</div>
+		</div>
+	</div>
 
-                    <div class="item">
-                        <div class="thumbnail">
-                            <img src="img/notebook.png" alt="..." class="img-circle team-img">
-                            <div class="caption">
-                                <h3>Adobe Creative Suite</h3>
-                                <p>Photoshop</p>
-                            </div>
-                        </div>
-                    </div>
+	<!-- Modals -->
+	<div id="bucket-modal" class="modal">
+		<div class="modal-content">
+			<span class="close">&times;</span>
+			<div class="container">
+				<div class="row">
+					<h4>Bucket</h4>
+				</div>
+				<div class="row">
+					<div class="three columns">
+		        <h5 class="subheaders">Duration</h5>
+		        <h6>Sept 2016 - Dec 2016</h6>
+		        <h6>CSE 170/COGS 120: Human-Computer Interaction</h6>
+		      </div>
+		      <div class="three columns">
+		        <h5 class="subheaders">Role</h5>
+		        <h6>Front-end Developer | UI/UX Designer</h6>
+		      </div>
+		      <div class="three columns">
+		        <h5 class="subheaders">Tools</h5>
+		        <h6>React, Express, Yelp API, MongoDB, User Interviews, Storyboarding, Paper Prototyping, User Testing, AB Testing</h6>
+		      </div>
+		      <div class="three columns">
+		        <h5 class="subheaders">Team</h5>
+		        <h6>Daniel Kong, Joey Wong</h6>
+		      </div>
+				    <!--<h5>Deliverables</h5>
+				    <a href="https://bucketwithfriends.herokuapp.com/app">
+				        <h6>Web App</h5>
+				    </a>
+				    <a href="https://www.youtube.com/watch?v=IzLPPvbIb-U">
+				        <h6>Demo Video</h6>
+				    </a>-->
+				</div>
+				<hr>
+				<div class="row">
+					<h5>Problem</h5>
+					<p>Planning social events or hangouts with friends can be difficult, as the process can easily become <span class="emphasize">disorganized</span>. For example, in group chats, people send over multiple Yelp links, which tend to flood the chat window and can also get lost in the conversation. People <span class="emphasize">need a way to save the places they want to go to with their friends</span> in a simple and organized manner.</p>
 
-                    <div class="item">
-                        <div class="thumbnail">
-                            <img src="img/plane.png" alt="..." class="img-circle team-img">
-                            <div class="caption">
-                                <h3>Front-end Development</h3>
-                                <p>HTML, CSS, Javascript, Bootstrap, React</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-            </div>
-        </div>
-    </div>
+					<h5>Our Solution</h5>
+					<p>With Bucket, users will be able to <span class="emphasize">collaboratively create and edit bucket lists</span> with their different groups of friends. Our mobile-responsive web app is connected with the Yelp API, allowing users to directly search for places they wish to go to straight from our app. Users can create groups, where each group has their own page with all of their respective bucket lists on that page. Each list they create is categorized with the tag name, which organizes all their lists. Users can also archive places they have previously been to. Bucket makes planning future hangouts a hassle-free and stress-free process!</p>
 
-    <!-- Portfolio Section
-    ==========================================-->
-    <div id="tf-works">
-        <div class="container"> <!-- Container -->
-            <div class="section-title text-center center">
-                <h2><strong>P o r t f o l i o</strong></h2>
-                <div class="line">
-                    <hr>
-                </div>
-                <div class="clearfix"></div>
-            </div>
-            <div class="space"></div>
+					<hr>
 
-            <div id="lightbox" class="row">
+					<h5>Final Design</h5>
+					<a href="https://bucketwithfriends.herokuapp.com/app" class="button">Demo</a>
+					<a href="https://github.com/christywong/bucket-app" class="button">View Source</a>
+					<a href="https://www.youtube.com/watch?v=IzLPPvbIb-U" class="button">Demo Video</a>
+					<img src="imgs/bucket/main-screen.png" alt="Bucket Main Screen">
+					<img src="imgs/bucket/search-results.png" alt="Bucket Search Results">
+				</div>
+			</div>
+		</div>
+	</div>
 
-                <!-- Empty div to center my other one -->
-                <!--<div class="col-sm-12 col-md-6 col-lg-3 branding">
-                </div>-->
+	<div id="mopa-modal" class="modal">
+		<div class="modal-content">
+			<span class="close">&times;</span>
+			<div class="container">
+				<div class="row">
+					<h4>Museum of Photographic Arts (MOPA)</h4>
+				</div>
+				<div class="row">
+					<div class="three columns">
+						<h5 class="subheaders">Duration</h5>
+						<h6>March 2016 - June 2016</h6>
+						<h6>COGS 102C: Cognitive Design Studio</h6>
+					</div>
+					<div class="three columns">
+						<h5 class="subheaders">Role</h5>
+						<h6>UX Designer</h6>
+					</div>
+					<div class="three columns">
+						<h5 class="subheaders">Tools</h5>
+						<h6>Adobe Photoshop (for prototyping), User Interviews, Affinity Diagrams, User Testing</h6>
+					</div>
+					<div class="three columns">
+						<h5 class="subheaders">Team</h5>
+						<h6>Cherin Kim, Jeffrey Hoang, Shao-Hang Lan, Vania Lei, Vivian Lee</h6>
+					</div>
+				</div>
 
-                <div class="col-sm-12 col-md-6 col-lg-6 branding">
-                    <div class="portfolio-item">
-                        <div class="hover-bg">
-                            <a href="bucket.html">
-                                <div class="hover-text">
-                                    <h4 style="font-size: 30px">Bucket</h4>
-                                    <small style="font-size: 18px">collaboratively create bucket lists</small>
-                                    <div class="clearfix"></div>
-                                    <i class="fa fa-arrow-right"></i>
-                                </div>
-                                <img src="img/bucket/bucket-mockup-new.png" class="img-responsive" alt="...">
-                            </a>
-                        </div>
-                    </div>
-                </div>
+				<hr>
 
-                <div class="col-sm-12 col-md-6 col-lg-6 branding">
-                    <div class="portfolio-item">
-                        <div class="hover-bg">
-                            <a href="mopa.html">
-                                <div class="hover-text">
-                                    <h4 style="font-size: 30px">MOPA</h4>
-                                    <small style="font-size: 18px">improving museum engagement</small>
-                                    <div class="clearfix"></div>
-                                    <i class="fa fa-arrow-right"></i>
-                                </div>
-                                <img src="img/mopa/mopa2.jpg" class="img-responsive" alt="...">
-                            </a>
-                        </div>
-                    </div>
-                </div>
+				<div class="row">
+					<h5>Design Opportunity</h5>
+					<p>Our design opportunity involved creating new methods of engagement at the Museum of Photographic Arts (MOPA) and bringing in a broader audience for them to educate in the practice of photography. We hoped to design more unique and visitor-centered strategies for attracting new interest in the galleries available at the museum, especially as U.S. attendance in the fine arts are dropping every year. In fact, the data gathered from the past year reveals that, at MOPA specifically, <span class="emphasize">families have made up the lowest proportion of total visitors</span>. Therefore, we aimed to find ways to <span class="emphasize">actively engage families</span> – across multiple generations and between family members. Due to the broad range of ages within a family, we created prototypes that will <span class="emphasize">accommodate varying ages and interests</span> as we hope to engage everyone.
 
-                <div class="col-sm-12 col-md-6 col-lg-6 branding">
-                    <div class="portfolio-item">
-                        <div class="hover-bg">
-                            <a href="lemongrass.html">
-                                <div class="hover-text">
-                                    <h4 style="font-size: 30px">Lemongrass</h4>
-                                    <small style="font-size: 18px">website redesign + mobile design</small>
-                                    <!--<p style="font-size: 16px">(current project - to be updated)</p>-->
-                                    <div class="clearfix"></div>
-                                    <i class="fa fa-arrow-right"></i>
-                                </div>
-                                <img src="img/lemongrass-mockup.png" class="img-responsive" alt="...">
-                            </a>
-                        </div>
-                    </div>
-                </div>
+					<h5>Our Proposed Solution</h5>
+					<p>Through iterations of user testing and prototyping, we ended up creating <span class="emphasize">family activity cards</span> that would allow all family members to <span class="emphasize">work together creatively & collaboratively</span> and engage with the museum's artwork together.</p>
 
-                <div class="col-sm-12 col-md-6 col-lg-6 branding">
-                    <div class="portfolio-item">
-                        <div class="hover-bg">
-                            <a href="chored.html">
-                                <div class="hover-text">
-                                    <h4 style="font-size: 30px">Chore'd</h4>
-                                    <small style="font-size: 18px">manage chores within different groups</small>
-                                    <div class="clearfix"></div>
-                                    <i class="fa fa-arrow-right"></i>
-                                </div>
-                                <img src="img/chored-mockup.png" class="img-responsive" alt="...">
-                            </a>
-                        </div>
-                    </div>
-                </div>
+					<hr>
 
-                <!-- Empty div to center my other one -->
-                <!-- <div class="col-sm-12 col-md-6 col-lg-3 branding">
-                </div> -->
+					<h5>Final Design Solution</h5>
+					<p>Read our <a href="imgs/mopa/final_design_brief.pdf">final design brief</a> or check out our <a href="imgs/mopa/COGS102C_Final_Presentation.pdf">final presentation</a> for more information!</p>
+					<div class="row">
+						<div class="six columns">
+							<img src="imgs/mopa/mopa-activity-card-1.png" alt="MOPA Activity Card 1">
+						</div>
+						<div class="six columns">
+							<img src="imgs/mopa/mopa-activity-card-2.png" alt="MOPA Activity Card 2">
+						</div>
+					</div>
+				</div>
 
-                <div class="col-sm-12 col-md-6 col-lg-6 branding">
-                    <div class="portfolio-item">
-                        <div class="hover-bg">
-                            <a href="buddies.html">
-                                <div class="hover-text">
-                                    <h4 style="font-size: 30px">StudyBuddies</h4>
-                                    <!-- <small style="font-size: 20px">UX Design // Front-end Development</small> -->
-                                    <small style="font-size: 18px">create & join study groups</small>
-                                    <div class="clearfix"></div>
-                                    <i class="fa fa-arrow-right"></i>
-                                </div>
-                                <img src="img/mockup.png" class="img-responsive" alt="...">
-                            </a>
-                        </div>
-                    </div>
-                </div>
+				<hr>
 
-            </div>
-        </div>
-    </div>
+				<div class="row" id="mopa-progress">
+					<h5>Progress</h5>
 
-    <!-- Experience Section
-    ==========================================-->
-    <div id="tf-experience" class="text-center">
-        <div class="overlay">
-            <div class="container">
-                <div class="section-title center">
-                    <h2><strong>E X P E R I E N C E</strong></h2>
-                    <div class="line">
-                        <hr>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-8 col-md-offset-2">
-                        <div id="experience" class="owl-carousel owl-theme">
-                            <div class="item">
-                                <h5 style="font-size: 25px"> Web Developer </h5>
-                                <h5 style="font-weight: 400; font-size: 18px; text-transform: none"> UCSD ITS Workplace Technology Services </h5>
-                                <p><strong>July 2016 - Present</strong> | La Jolla, CA</p>
-                            </div>
+					<h5 class="subheaders">Data-Driven Development</h5>
+					<div class="row">
+						<div class="six columns">
+							<a href="imgs/mopa/mopa-visitors.png">
+								<img src="imgs/mopa/mopa-visitors.png" alt="MOPA Visitor Group Types">
+							</a>
+						</div>
+						<div class="six columns">
+							<a href="imgs/mopa/mopa-hear.png">
+								<img src="imgs/mopa/mopa-hear.png" alt="MOPA - How did you hear about MOPA?">
+							</a>
+						</div>
+					</div>
 
-                            <div class="item">
-                                <h5 style="font-size: 25px"> CSE Tutor </h5>
-                                <h5 style="font-weight: 400; font-size: 18px; text-transform: none"> UCSD Computer Science & Engineering Department </h5>
-                                <p><strong>January 2015 - June 2016</strong> | La Jolla, CA</p>
-                            </div>
+					<h5 class="subheaders">Primary Research</h5>
+					<p>As our first venture in need-finding, we were able to conduct our own field research in order to inform our initial design process. Our previous methods for primary research have included standard interviews, museum observations, and visitor surveys.</p>
+					<h6>User Interviews</h6>
+					<p>In standard interviews, we conducted in-person user interviews with individuals who’ve had previous experience visiting museums in general. Some general questions included:</p>
+					<ul>
+				    <li>Did you know that there are museums in Balboa Park? If so, have you been to any one of them?</li>
+				    <li>How would you describe a museum?</li>
+				    <li>How long has it been since you last went to a museum?</li>
+				    <li>What did you like/dislike about the museum?</li>
+				    <li>What aspects of a museum attracts you the most?</li>
+				    <li>What would you like to see in a museum that you visit?</li>
+					</ul>
+					<p>From these interviews, we ultimately discovered that <span class="emphasize">the motivation to visit museums is hindered by the lack of engagement and interactivity of the exhibits</span>.</p>
+					<h6>In-person Observations</h6>
+					<p>To further our research, we visited the museum on two separate occasions for user research. There, we closely observed how people interacted with the exhibit, how they interacted with other visitors in the museum, which exhibits they went to first, and which exhibits they stayed at the longest. We wanted to see what the current users of the museum do when they explore the museum itself.</p>
+					<p>From our field research, we found that rather than following the typical layout of the room, <span class="emphasize">visitors gravitated towards exhibits that appeared more interactive</span> and hands-on. As a result, they often <span class="emphasize">skipped over flat exhibits</span> or glanced over them very briefly. The exhibits also had questions posted near the artwork to engage the visitors in critical thinking. However, by the amount of time that they spend at each piece, it is evident that those questions do not provoke engagement.</p>
+					<h6>Visitor Surveys</h6>
+					<p>While at the museum, we handed out <a href="https://docs.google.com/forms/d/1Z2RSjwcLT_Z8UK6HsgJISd_lWWh7NdKo_di7_JB6zHo/viewform">Google Form surveys</a> for visitors to fill out on our tablet. Questions included general topics about museum experiences regarding: how many times they’ve visited a museum in the last 3 months, a description of their last experience visiting a museum, what they liked and what they didn’t like about their experience, and how they interacted with the exhibits at the museum.</p>
+					<p>From these survey responses, we found that <span class="emphasize">visitors primarily interacted with museum exhibits by taking photos and by developing their own interpretation of the art</span>. Visitors also generally favored exhibits that were 'thought-provoking'. Finally, when asked what words came to mind when they hear the word 'exhibit,' most listed the word 'interactive'.</p>
+					<img src="imgs/mopa/mopa-affinity-diagram.png" alt="MOPA Affinity Diagram">
+					<h6>Primary Research Conclusion</h6>
+					<p>Ultimately, we discovered from our primary research that in order to create more engaging opportunities for holding visitor attention, we should try creating <span class="emphasize">interactive experiences that keep visitors occupied, connect with them on a personal level, and encourage introspection</span>. In addition, we want to also focus on opportunities that may be <span class="emphasize">extrinsically rewarding</span>.</p>
 
-                            <div class="item">
-                                <h5 style="font-size: 25px">Program Assistant Intern </h5>
-                                <h5 style="font-weight: 400; font-size: 18px; text-transform: none"> Making Waves Education Program</h5>
-                                <p><strong>June 2012 - August 2012</strong> | San Francisco, CA</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="resume">
-                    <h3><strong><a href="img/ChristyWong_Resume5.pdf"> R E S U M E </a> </h3>
-                </div>
-            </div>
-        </div>
-    </div>
+					<h5 class="subheaders">Design Constraints</h5>
+					<p>Due to the financial and physical constraints of MOPA’s exhibition gallery, we were prompted to design a new opportunity that would be <span class="emphasize">cost-efficient, space-efficient, and wouldn’t require extra manpower</span>.</p>
+					<p>As a result, we concluded that our design solution needed to address the following key questions:</p>
+					<ul>
+						<li>Will people need to have known about MOPA before coming to the museum?</li>
+						<li>Will our solution be able to involve the whole family?</li>
+						<li>Will people be able to take away an experience or souvenir from our solution?</li>
+						<li>Is our solution sustainable, and can it be implemented on a low budget?</li>
+					</ul>
+					<p>We needed to find a way that would bring in new interest to the museum in addition to retaining current visitors who would be willing to visit the museum over upcoming years. Therefore, in order to ensure that our solution was not only effective, but also sustainable in the long run, we needed to create a prototype that would be economical and quick to implement within the boundaries of these constraints.</p>
 
-    <!-- Contact Section
-    ==========================================-->
-    <!-- <div id="tf-contact" class="text-center">
-        <div class="container">
+					<h5 class="subheaders">Ideation & Prototyping: Round 1</h5>
+					<h6>Ideation</h6>
+					<p>Based on our design constraints and the key questions we came up with before, we brainstormed various possible solutions addressing each question. Then we voted on the top 3 ideas and created paper prototypes for them.</p>
+					<img src="imgs/mopa/possible-solutions.jpg" alt="MOPA Possible Solutions">
+					<h6>Prototype 1</h6>
+					<div class="row">
+						<div class="six columns">
+							<img src="imgs/mopa/proto1.JPG" alt="Prototype 1">
+						</div>
+						<div class="six columns">
+							<p>Here, the paper represents a museum wall. At MOPA, there are questions that are written on the wall asking visitors to think about the significance and value of each art piece. However, there is currently no place for visitors to actually answer these questions. Rather than stopping to think about the questions that are available on the wall, visitors tended to overlook it completely. In order to provide the opportunity for the visitors to immerse themselves in with the questions, we felt that we needed to create <span class="emphasize">a space where visitors could leave a piece of themselves behind</span> by being able to post their answers on the wall.</p>
+						</div>
+					</div>
+					<h6>Prototype 2</h6>
+					<div class="row">
+						<div class="six columns">
+							<img src="imgs/mopa/proto2.JPG" alt="Prototype 2">
+						</div>
+						<div class="six columns">
+							<p>Here, we have an early prototype of a museum activity card that we are thinking of implementing. While visiting the museum over the weekend, we have noticed that <span class="emphasize">although people tend to go through the room quickly, they don't always look at every exhibit that is available</span>. Some displays naturally stick out more than others. As such, in order to help visitors pace themselves, we were hoping that this stamp card that has visitors identify a photograph from a mosaic will incentivize visitors to go through the entire gallery and look at each exhibit carefully.</p>
+						</div>
+					</div>
+					<h6>Prototype 3</h6>
+					<div class="row">
+						<div class="six columns">
+							<img src="imgs/mopa/proto3.JPG" alt="Prototype 3">
+						</div>
+						<div class="six columns">
+							<p>Here, we focused more on how visitors could create their own form of art through putting up personal photos in a particular section of the museum. At the museum, we noticed that there were empty spaces that weren't being used for any of the artwork. After talking with our museum coordinator, Joaquin, we soon found that the structure of the wall simply cannot support the burden of framed photographs. Thus, we proposed the idea of visitors submitting their own Polaroids and printed photographs to be hung up along the wall, possibly with a new theme each month. This way, <span class="emphasize">visitors could see themselves being a part of the museum</span> while also capitalizing on the free space available in the museum.</p>
+						</div>
+					</div>
+					<h6>Feedback</h6>
+					<div class="row">
+						<div class="four columns">
+							<u>Prototype 1</u>
+							<ul>
+								<li>May appear distracting/intrusive</li>
+								<li>Might be weird to just see one post-it next to an exhibit (if not many people have participated)</li>
+								<li>Needed physical real estate for post-its</li>
+							</ul>
+						</div>
+						<div class="four columns">
+							<u>Prototype 2</u>
+							<ul>
+								<li>Liked the idea of a "scavenger hunt" type activity</li>
+								<li>Could see kids especially enjoying it</li>
+								<li>Stamp cards require additional monitoring from staff, so not feasible</li>
+							</ul>
+						</div>
+						<div class="four columns">
+							<u>Prototype 3</u>
+							<ul>
+								<li>Liked the idea, but would only work if visitors had already been to MOPA before</li>
+								<li>Required visitors to bring their own material</li>
+							</ul>
+						</div>
+					</div>
 
-            <div class="row">
-                <div class="col-md-8 col-md-offset-2">
+					<h5 class="subheaders">Rapid Prototyping: Round 2</h5>
+					<p>Based on the feedback we received from our peers and research conducted by the museum, we decided to converge on one solution: <strong>the family activity cards</strong> in Prototype 2. As a result, our next round of prototyping involved all of our group members mocking up several versions of the possible activities we could include, <a href="https://drive.google.com/drive/u/0/folders/0B97HTxnfpnYvdkxpZU5WTk41eFE">all of which can be found in this folder</a>.</p>
+					<p>Out of all the prototypes we created, we decided to narrow down to only 2 different versions in order to test them at the museum.</p>
+					<h6>Activity 1: Photo Unscramble</h6>
+					<div class="row">
+						<div class="six columns">
+							<img src="imgs/mopa/unscramble-front.png" alt="MOPA Unscramble Front">
+						</div>
+						<div class="six columns">
+							<img src="imgs/mopa/unscramble-back.png" alt="MOPA Unscramble Back">
+						</div>
+					</div>
+					<p>In this activity, kids are prompted to solve a puzzle in a gallery photo hunt. The question “Who helped you complete this activity?” is designed to <span class="emphasize">encourage interaction</span> within the familyin this fun activity. On the other hand, the question “What do you think the artist wanted you to notice?” is designed to encourage children completing the activity to reflect on their own personal values and interpretation of the artwork.</p>
+					<h6>Activity 2: Find & Sketch</h6>
+					<div class="row">
+						<div class="six columns">
+							<img src="imgs/mopa/find-and-sketch-front.png" alt="MOPA Find and Sketch Front">
+						</div>
+						<div class="six columns">
+							<img src="imgs/mopa/find-and-sketch-back.png" alt="MOPA Find and Sketch Back">
+						</div>
+					</div>
+					<p>In this activity, kids are asked to draw in what they think the rest of the photo will look like, then seek out the exhibit in the gallery to compare what they drew, as a way to <span class="emphasize">spark conversation</span> between one another. On the other side of the card, kids are also encouraged to seek interesting photos of their own, allowing them to form their own opinions about the gallery and the pictures within it.</p>
+					<h6>Prototype Testing</h6>
+					<p>Going forward with the research questions in mind, we set out to test our prototypes at the museum. We printed multiple low-fidelity copies in order to test them, see the results, and start thinking about the next iteration. As our target audience is families, we decided to go over the weekend where we know the flow of families into the museum was much larger compared to a regular weekday. In total, we asked <b>four different groups of families</b> that day to test out our prototype.</p>
+					<h6>Results</h6>
+					<div class="row">
+						<div class="six columns">
+							<img src="imgs/mopa/result1.png" alt="MOPA Result 1">
+						</div>
+						<div class="six columns">
+							<img src="imgs/mopa/result2.png" alt="MOPA Result 2">
+						</div>
+					</div>
+					<p>Upon giving the prototypes out to families, they seemed excited and eager to complete the activities. We had several team members stationed throughout the gallery to observe participants in our prototype testing. Ultimately, we found that <span class="emphasize">what people say isn’t necessarily what they do</span>.</p>
+					<div class="row">
+						<div class="six columns">
+							<img src="imgs/mopa/observation1.png" alt="MOPA Observation 1">
+						</div>
+						<div class="six columns">
+							<p>Here, the child & adult are completely split up. While the child is completing the activity alone, the adult is in a different section looking at the artwork.</p>
+						</div>
+					</div>
+					<p>While participants often <span class="emphasize">indicated in the card that they worked with family members</span> on the activities, children and parents were <span class="emphasize">in fact split up for most of their time</span> in the gallery. Many adults resolved to watch over their children from afar, some pairs were divided up entirely.</p>
+					<p>Despite this, however, parents and children appeared content with how they interacted, as children were able to explore the gallery freely while parents were able to take a short breather and enjoy the exhibit. Also, they did come together at the end to <span class="emphasize">share their experiences</span>.</p>
 
-                    <div class="section-title center">
-                        <h2><strong>contact me</strong></h2>
-                        <div class="line">
-                            <hr>
-                        </div>
-                        <div class="clearfix"></div>       
-                    </div>
+					<h5 class="subheaders">Design Solution</h5>
+					<p>Our final iteration and our ultimate design solution took into account the feedback we received overall from the class and the users we tested it on at MOPA. The key elements for our design solution included having <span class="emphasize">clearer instructions</span> on our cards and <span class="emphasize">having more of the activities that our users favored</span>. We decided to move the instructions from the bottom left to the top, where people tend to look at first. Also, we shrunk the MOPA logo, so that there would be more room for more activities, since that is the main focus of the cards.</p>
+					<p>With these activity cards, members of the family are also <span class="emphasize">able to share with one another their interpretation of the pieces at the museum</span>. These activity cards can also be shared with other friends and family members as it’s a little piece of the museum that they can take away. This can create the opportunity for family members to <span class="emphasize">have a meaningful conversation about their museum experience</span>, whether it’s during the time they complete the activity card or after they leave the museum. This furthers our objective of motivating our target audience to continuously come back to the museum to explore the exhibits and engage in such activities to share with family and friends.</p>
+					<p>With this last iteration, we took the data that we received from user testing in order to create a design that we believe is more human-centered and will be received well by our target audience. With the subtraction of some design issues (such as eliminating confusing coloring background and confusing instructions placed in unintuitive areas) and the addition of more ideas that resulted from our user testing data, we created this final design solution that we hope will <span class="emphasize">engage family members all around</span> and further continue to <span class="emphasize">motivate them to visit again</span>.</p>
+				</div>
+				<!--<div class="row">
+					<div class="three columns">
+						<div class="bucket-info">
+			        <h5 class="subheaders">Duration</h5>
+			        <h6>March 2016 - June 2016</h6>
+			        <h6>COGS 102C: Cognitive Design Studio</h6>
 
-                    <div class="row" style="display: inline-block">
-                        <h4> <strong>Current Location:</strong> La Jolla, CA </h4>
-                        <h4> <strong>Email:</strong> cww016@ucsd.edu </h4>
-                    </div> -->
+			        <h5 class="subheaders">Role</h5>
+			        <h6>UX Designer</h6>
 
-                    <!-- <form method="post" action="contact.php">
-                        <div class="row" style="display: inline-block"> -->
-                            <!-- <div class="col-md-6"> -->
-                                <!-- <div class="form-group">
-                                    <input type="name" name="cf_name" style="width: 500px" class="form-control" id="exampleInputName1" placeholder="Name">
-                                </div>-->
-                            <!-- </div> -->
-                            <!-- <div class="col-md-6"> -->
-                                <!-- <div class="form-group">
-                                    <input type="email" name="cf_email" style="width: 500px" class="form-control" id="exampleInputEmail1" placeholder="Email">
-                                </div> -->
-                            <!-- </div> -->
-                                <!-- <div class="form-group">
-                                    <textarea class="form-control" name="cf_message" rows="5" cols="50" placeholder="Message"></textarea>
-                                 </div> -->
-                        
-                                 <!-- <button type="submit" class="btn tf-btn btn-default">Send <span style="font-size: 16px"> ✉ </span> </button>-->
-                                 <!-- <input type="submit" value="Send" />
-                        </div>
-                    </form> -->
+			        <h5 class="subheaders">Tools</h5>
+			        <h6>Adobe Photoshop (for prototyping), User Interviews, Affinity Diagrams, User Testing</h6>
 
-                <!--</div>
-            </div>
+			        <h5 class="subheaders">Team</h5>
+			        <h6>Cherin Kim, Jeffrey Hoang, Shao-Hang Lan, Vania Lei, Vivian Lee</h6>
+						</div>
+					</div>
+					<div class="nine columns">
+						<h5>Design Opportunity</h5>
+						<p>Our design opportunity involved creating new methods of engagement at the Museum of Photographic Arts (MOPA) and bringing in a broader audience for them to educate in the practice of photography. We hoped to design more unique and visitor-centered strategies for attracting new interest in the galleries available at the museum, especially as U.S. attendance in the fine arts are dropping every year. In fact, the data gathered from the past year reveals that, at MOPA specifically, <span class="emphasize">families have made up the lowest proportion of total visitors</span>. Therefore, we aimed to find ways to <span class="emphasize">actively engage families</span> – across multiple generations and between family members. Due to the broad range of ages within a family, we created prototypes that will <span class="emphasize">accommodate varying ages and interests</span> as we hope to engage everyone.
 
-        </div>
-    </div> -->
+						<h5>Our Proposed Solution</h5>
+						<p>Through iterations of user testing and prototyping, we ended up creating <span class="emphasize">family activity cards</span> that would allow all family members to <span class="emphasize">work together creatively & collaboratively</span> and engage with the museum's artwork together.</p>
 
-    <nav id="footer">
-        <div class="container">
-            <div class="fnav" style="text-align: center">
-                <ul class="footer-social">
-                    <li><a href="https://www.linkedin.com/in/christywwong"><i class="fa fa-linkedin"></i></a></li>
-                    <li><a href="https://github.com/christywong"><i class="fa fa-github"></i></a></li>
-                    <li><a href="https://instagram.com/wongchristy_/"><i class="fa fa-instagram"></i></a></li>
-                </ul>
-                <p style="color: #fff">Copyright © 2017. Christy Wong</p>
-            </div>
-        </div>
+						<hr>
 
-        <span id="top-link-block">
-            <a href="#tf-home" class="gototop" onclick="$('html,body').animate({scrollTop:0},'slow');return false;">
-                <i class="fa fa-angle-up fa-3x">
-                </i>
-            </a>
-        </span>
-    </nav>
+						<h5>Final Design Solution</h5>
+						<img src="imgs/bucket/main-screen.png" alt="Bucket Main Screen">
+						<img src="imgs/bucket/search-results.png" alt="Bucket Search Results">
+					</div>
+				</div>-->		
+			</div>
+		</div>
+	</div>
 
+	<div id="lemongrass-modal" class="modal">
+	</div>
 
-    <script type="text/javascript" src="js/modernizr.custom.js"></script>
+	<!-- <section class="timeline">
+		<div class="container">
+			<div class="row">
 
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script type="text/javascript" src="js/jquery.1.11.1.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <!-- <script type="text/javascript" src="js/bootstrap.js"></script>-->
-    <!-- Latest compiled and minified JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="js/SmoothScroll.js"></script>
-    <script type="text/javascript" src="js/jquery.isotope.js"></script>
+				<div class="timeline-block timeline-block-right timeline-card">
+					<div class="marker"></div>
+					<div class="timeline-content">
+						<h5>RoadRunner</h5>
+						<h6>April 2017 - Present | in-progress</h6>
+						<p>Create, customize, and share lists of activities to do, mapping out a path based on a list of destinations added (using the Google Maps API).</p>
+						<a href="https://github.com/emyew/ACME" class="button">View Source</a>
+					</div>
+				</div>
 
-    <script src="js/owl.carousel.js"></script>
+				<div class="timeline-block timeline-block-left">
+					<div class="marker marker-exp"></div>
+					<div class="timeline-content">
+						<h5>Student Web Developer</h5>
+						<h6>UCSD IT Services Workplace Technology Services</h6>
+						<p>July 2016 - Present</p>
+						<p>Create and edit web pages for various departments & organizations within UCSD using Cascade Server CMS. Created a <a href="https://christywong.github.io/campus-mobile-marketing/">responsive marketing page</a> for the UCSD campus mobile app using HTML5, CSS3 & JavaScript</p>
+					</div>
+				</div>
 
-    <!-- Javascripts
-    ================================================== -->
-    <script type="text/javascript" src="js/main.js"></script>
+				<div class="timeline-block timeline-block-right">
+					<div class="marker"></div>
+					<div class="timeline-content">
+						<h5>ActorDex</h5>
+						<h6>Jan 2017 - March 2017</h6>
+						<p>Vue.js | Firebase | Bulma</p>
+						<p>View and save a collection of your favorite actors and actresses.</p>
+						<a href="https://actor-dex-final.firebaseapp.com/" class="button">Demo</a>
+						<a href="https://github.com/christywong/actordex" class="button">View Source</a>
+					</div>
+				</div>
 
-  </body>
+				<div class="timeline-block timeline-block-right">
+					<div class="marker"></div>
+					<div class="timeline-content">
+						<h5>Bucket</h5>
+						<h6>Sept 2016 - Dec 2016</h6>
+						<p>React | Express | Yelp API | MongoDB</p>
+						<p>Collaboratively create and edit bucket lists with different groups of friends.</p>
+						<a href="https://bucketwithfriends.herokuapp.com/" class="button">Demo</a>
+						<a href="https://github.com/christywong/bucket-app" class="button">View Source</a>
+						<a href="#" class="button">Read More</a>
+					</div>
+				</div>
+
+				<div class="timeline-block timeline-block-right">
+					<div class="marker"></div>
+					<div class="timeline-content">
+						<h5>Museum of Photographic Arts (MOPA)</h5>
+						<h6>March 2016 - June 2016</h6>
+						<p>Finding ways to improve museum engagement and attract a broader range of visitors.</p>
+						<a href="#" class="button">Read More</a>
+					</div>
+				</div>
+
+				<div class="timeline-block timeline-block-left">
+					<div class="marker marker-exp"></div>
+					<div class="timeline-content">
+						<h5>Tutor</h5>
+						<h6>UCSD Department of Computer Science & Engineering</h6>
+						<p>Jan 2015 - June 2016</p>
+						<p>Provided tutoring to individual students who required additional help during designated lab hours. Answered relevant questions relating to course material. Graded students' weekly programming assignments</p>
+					</div>
+				</div>
+
+				<div class="timeline-block timeline-block-right">
+					<div class="marker"></div>
+					<div class="timeline-content">
+						<h5>Lemongrass</h5>
+						<h6>HTML5 | CSS3 | JavaScript | Bootstrap</h6>
+						<p>Jan 2016 - March 2016</p>
+						<p>Website Redesign + Mobile Design</p>
+						<a href="http://lemongrassplates.com/" class="button">Website</a>
+						<a href="https://github.com/christywong/lemongrass" class="button">View Source</a>
+						<a href="#" class="button">Read More</a>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</section> -->
+
+	<hr>
+
+	<!-- Footer -->
+	<div id="footer">
+		<!-- <a href="mailto:cww016@ucsd.edu" class="button" id="email-btn"><strong>Contact Christy</strong></a> -->
+		<h5 id="reach-me">reach me at <strong>cww016@ucsd.edu</strong></h5>
+		<a href="imgs/ChristyWong_Resume6.pdf">
+			<i class="fa fa-2x fa-file-text-o social-icons" aria-hidden="true"></i>
+		</a>
+		<a href="https://www.linkedin.com/in/christywwong">
+			<i class="fa fa-2x fa-linkedin-square social-icons" aria-hidden="true"></i>
+		</a>
+		<a href="https://github.com/christywong">
+			<i class="fa fa-2x fa-github-square social-icons" aria-hidden="true"></i>
+		</a>
+		<a href="https://instagram.com/wongchristy_/">
+			<i class="fa fa-2x fa-instagram social-icons" aria-hidden="true"></i>
+		</a>
+		<p id="copyright">Copyright © 2017. Christy Wong</p>
+	</div>
+
+	<!-- Scripts -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+</body>
 </html>
