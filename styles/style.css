@@ -28,7 +28,11 @@ hr {
 .emphasize {
 	font-weight: bold;
 	font-style: italic;
-	color: #c78989
+	color: #5ca5b4;
+}
+.sub-titles {
+	color: #c78989;
+	text-transform: lowercase;
 }
 /*.button{
 	background: white;
@@ -46,6 +50,8 @@ hr {
 }
 #title {
 	margin-top: 50px;
+	text-transform: uppercase;
+	font-weight: bold;
 }
 /* About Section */
 #about-left {
@@ -64,15 +70,15 @@ hr {
 	margin-top: 20px;
 	margin-bottom: 20px;
 }
-#title {
-	font-weight: bold;
+#about-right hr {
+	display: none;
 }
 #hi {
 	margin-bottom: 0;
-	color: #5ca5b4;
+	color: #5ca5b4;;
 }
 #blurb {
-	color: #5ca5b4;
+	color: #5ca5b4;;
 	margin-bottom: 0;
 }
 #collage {
@@ -111,6 +117,8 @@ hr {
   left: 50%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
+  width: 100%;
+  padding: 0px 15px;
 }
 .hover-text h5 {
 	text-transform: uppercase;
@@ -118,9 +126,36 @@ hr {
 }
 .hover-text p {
 	font-size: 17px;
+	margin-bottom: 10px;
 }
 .hover-text i {
 	color: #5ca5b4;
+}
+.hover-text .button {
+	padding: 0px 15px;
+}
+.hover-text .view-source-btn {
+	margin-left: 5px;
+}
+@media screen and (max-width: 650px) {
+	.hover-text h5 {
+		font-size: 20px;
+	}
+	.hover-text p {
+		font-size: 15px;
+	}
+	.hover-text .button {
+		padding: 0px 10px;
+		font-size: 10px;
+	}
+}
+@media screen and (max-width: 549px) {
+	#about-right hr {
+		display: block;
+	}
+	.overlay {
+		opacity: 1;
+	}
 }
 /*.timeline {
 	width: 100%;
@@ -223,7 +258,7 @@ hr {
 .modal-content .subheaders {
 	text-transform: lowercase;
 	margin-bottom: 0;
-	color: #5CA5B4;
+	color: #5ca5b4;
 }
 .modal-content .button {
 	background: white;
