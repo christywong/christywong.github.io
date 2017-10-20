@@ -48,6 +48,9 @@ hr {
 #header {
 	text-align: center;
 }
+#header h5 em {
+	color: #5ca5b4;
+}
 #title {
 	margin-top: 50px;
 	text-transform: uppercase;
@@ -75,10 +78,10 @@ hr {
 }
 #hi {
 	margin-bottom: 0;
-	color: #5ca5b4;;
+	color: #5ca5b4;
 }
 #blurb {
-	color: #5ca5b4;;
+	color: #5ca5b4;
 	margin-bottom: 5px;
 }
 #collage {
