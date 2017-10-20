@@ -4,9 +4,9 @@ var mopaModal = document.getElementById('mopa-modal');
 var mopaBtn = document.getElementById('mopa-btn');
 var roadrunnerModal = document.getElementById('roadrunner-modal');
 var roadrunnerBtn = document.getElementById('roadrunner-btn');
-var bucketSpan = document.getElementsByClassName("close")[0];
-var mopaSpan = document.getElementsByClassName("close")[1];
-var roadrunnerSpan = document.getElementsByClassName("close")[2];
+var roadrunnerSpan = document.getElementsByClassName("close")[0];
+var bucketSpan = document.getElementsByClassName("close")[1];
+var mopaSpan = document.getElementsByClassName("close")[2];
 
 bucketBtn.onclick = function() {
     bucketModal.style.display = "block";
@@ -32,12 +32,14 @@ roadrunnerSpan.onclick = function() {
 	roadrunnerModal.style.display = "none";
 }
 
+// if user clicks outside of modal
 window.onclick = function(event) {
-    if (event.target == bucketModal) {
+    if (event.target == roadrunnerModal) {
+        roadrunnerModal.style.display = "none";
+    }
+    else if (event.target == bucketModal) {
         bucketModal.style.display = "none";
     } else if (event.target == mopaModal) {
     	mopaModal.style.display = "none";
-    } else if (event.target == roadrunnerModal) {
-    	roadrunnerModal.style.display = "none;"
     }
 }
