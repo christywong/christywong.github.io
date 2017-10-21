@@ -286,6 +286,14 @@ hr {
 	margin-bottom: 0px;
 	font-weight: bold;
 }
+#roadrunner-modal .modal-content #roadrunner-progress h6 {
+	margin-bottom: 0px;
+	font-weight: bold;
+}
+#roadrunner-modal .modal-content .button {
+	margin-bottom: 20px;
+	margin-right: 20px;
+}
 .modal-content ul {
 	padding-left: 40px;
 	list-style-position: outside;

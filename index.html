@@ -145,6 +145,7 @@
 	</div>
 
 	<!-- Modals -->
+	<!-- RoadRunner Modal -->
 	<div id="roadrunner-modal" class="modal">
 		<div class="modal-content">
 			<span class="close">&times;</span>
@@ -184,15 +185,172 @@
 					<hr>
 
 					<h5>Final Design</h5>
-					<a href="http://acme-cogs121.herokuapp.com/" class="button">Demo</a>
+					<a href="http://acme-cogs121.herokuapp.com/" class="button" style="margin-right: 15px">Demo</a>
 					<a href="https://github.com/christywong/ACME" class="button">View Source</a>
-					<img src="imgs/roadrunner/trip.png" alt="RoadRunner Trip View">
-					<img src="imgs/roadrunner/explore.png" alt="RoadRunner Explore">
+					<img src="imgs/roadrunner/create.png" alt="RoadRunner Create Page - Final">
+					<img src="imgs/roadrunner/otherUserList.png" alt="RoadRunner Trip View">
+					<img src="imgs/roadrunner/explore-final.png" alt="RoadRunner Explore">
+				</div>
+
+				<hr>
+
+				<div class="row" id="roadrunner-progress">
+					<h5>Progress</h5>
+
+					<h5 class="subheaders">Storyboard</h5>
+					<img src="imgs/roadrunner/storyboard.png" alt="RoadRunner Storyboard">
+
+					<h5 class="subheaders">Planned Features</h5>
+					<ul>
+						<li>Map displays the user's current location and nearby locations (ex. coffee shops, beaches, concert halls) that are part of other users' playlists. Users can choose to use these playlists or create their own.</li>
+						<li>A search bar allows the user to search for playlists based on specific locations, time duration, or mood.</li>
+						<li>The mood feature would ask the user how they're feeling and present a couple of options (ex. adventurous, curious, relaxed). If a user chooses adventurous, they see playlists that include hiking trails, surfing spots, hangliding, etc. Choosing curious would bring up places like museums, local landmarks/monuments, guided tours. Relaxed could show small coffee shops or scenic walking trails along the beach.</li>
+						<li>Choosing a playlist displays its average rating and time duration, any comments it has, all the locations in that list, and the path of shortest distance between each location.</li>
+						<li>After completing a playlist, users can rate it, comment on it, and leave feedback on how long it took them to complete it.</li>
+					</ul>
+
+					<h5 class="subheaders">Paper Prototypes (round 1)</h5>
+					<img src="imgs/roadrunner/christy-paperprototype.JPG" alt="Christy Paper Prototype">
+					<img src="imgs/roadrunner/emily-paperprototype.jpg" alt = "Emily Paper Prototype">
+					<img src="imgs/roadrunner/arlen-paperprototype.JPG" alt="Arlen Paper Prototype">
+					<img src="imgs/roadrunner/mohsin-paperprototype.jpg" alt="Mohsin Paper Prototype">
+					<h6>Feedback</h6>
+					<ul>
+						<li>People were confused when we referred to the trip lists as "playlists", since they associated that with music (which isn't what we wanted), so we decided to scrap that term.</li>
+						<li>Liked the first prototype since it seemed clear and simple.</li>
+						<li>Confused if users were able to view a pre-existing list and modify it on the go. If not, that would be a nice feature to have since if users find a new location that fits a list they already have, they can edit it instead of creating a whole new list.</li>
+					</ul>
+
+
+					<h5 class="subheaders">First Iteration</h5>
+					<p>Our first task was to create a simple map feature using an API of our choice. We decided to go with the Google Maps API because it had the most documentation and seemed like it would do what we wanted for our app. None of us had ever used a map API before, so there was a little learning curve, but since there was a lot of helpful documentation, it wasn't too bad to get the hang of it.</p>
+					<p>Personally, I was the one on the team in charge of working with the Google Maps API. The simple map feature I worked on was just displaying a path starting from the user's current location and going through the points/places the user selects from a predetermined list of locations. With another team member, I worked through any issues we came across and figured out how we wanted to organize the user interface of this page.</p>
+					<img src="imgs/roadrunner/milestone5.png" alt="RoadRunner Landing Screen Milestone 5">
+					<h6>Feedback</h6>
+					<ul>
+						<li>What if users don't want to start from their current location? The app should allow users to choose whether they want to start from where they are or from one of the destinations on the list.</li>
+						<li>There should be a way to allow the user to choose the order in which they visit the different locations.</li>
+					</ul>
+
+					<h5 class="subheaders">Second Iteration</h5>
+					<p>We took the feedback we received from other teams and decided to focus on the reordering functionality of the app. This would allow users to easily modify the list of destinations if they decide they want to visit one location before another. We also started working on the navbar and making it responsive and testing out different UI choices. We decided to just start from the first location on the list for now until we figured out how we wanted to toggle between starting from the user's current location and the first destination.</p>
+					<p>Here, the default list of destinations is submitted and the path is displayed on the map.</p>
+					<img src = "imgs/roadrunner/milestone7-1.png" alt="RoadRunner Drag and Reorder Milestone 7-1">
+					<p>We then reordered the list by dragging "The Cottage" and switching its order with "Phil's BBQ". We resubmitted the list and a new path is displayed on the map.</p>
+					<img src = "imgs/roadrunner/milestone7-2.png" alt="RoadRunner Drag and Reorder Milestone 7-2">
+					<h6>Feedback</h6>
+					<ul>
+						<li>Love how you can drag and drop locations.</li>
+						<li>Currently, you only have pre-filled locations. Next would be implementing the search to allow users to add locations they want.</li>
+						<li>Adding more information to the markers on the map would be nice since right now all you have is just the addresses and users won't remember which address corresponds to which location. Having the name of the place would definitely be helpful.</li>
+					</ul>
+
+					<h5 class="subheaders">Third Iteration</h5>
+					<p>For this iteration, we focused on the add and remove functionality of the destinations. We also improved on improving the overall UI.</p>
+					<p>Users can now search for places, which is ntegrated with the Google Autocomplete feature to help users easily add new destinations.</p>
+					<img src="imgs/roadrunner/milestone9-1.png" alt="RoadRunner Add Function">
+					<p>Users can also remove destinations from the list. Each destination has an "X" associated with it, allowing users to delete a place once they click on it. Once they resubmit after removing places, a new path gets generated on the map.</p>
+					<img src="imgs/roadrunner/milestone9-2.png" alt="RoadRunner Remove Function">
+					<div class="row">
+						<div class="six columns">
+							<img src="imgs/roadrunner/milestone9-3.png" alt="RoadRunner Mobile View">
+						</div>
+						<div class="six columns">
+							<p>We also worked on making the app responsive on mobile devices. The navbar collapses into a standard hamburger menu on the upper right. When users click on the "La Jolla Day Trip" banner, the list/trip slides up, showing the destinations as well as the directions (once submitted).</p>
+							<h6>Feedback</h6>
+							<ul>
+								<li>Like the UI because it's simple to use and clean.</li>
+								<li>Want to be able to save and share lists (need user account feature to be implemented first).</li>
+								<li>Want actual labels on the pins/markers instead of just "A" or "B", since it would provide more information on the places and the user won't need to keep looking back at the list to see which marker is associated to which location.</li>
+							</ul>
+						</div>
+					</div>
+
+					<h5 class="subheaders">Paper Prototypes (round 2)</h5>
+					<p>Each team member designed the Explore and/or Profile pages for our app.</p>
+					<p><i>Christy</i> - This is a paper prototype of the Explore page and the Profile page. For the Explore page, users can search with the search bar and type in the title of the list/trip. They can also filter by mood (fixed number of moods). Each card is also color-coded with the mood of the trip. For the Profile page, users can upload an image for themselves and it will also display the lists they created/saved and their favorite lists.</p>
+					<img src="imgs/roadrunner/christy-paperprototype2.jpg" alt="Christy Paper Prototype 2">
+					<p><i>Emily</i> - This is a prototype for the Explore and Profile page. The layout is based on grids/cards that the users will be able to scroll through. On the Explore page, users will be able to search for specific keywords or tags. There will be a fixed amount of tags based on moods that users will be able to page through with the arrows and look at. Selecting tags will filter out trips. On the Profile page, users will have their own profile picture and description. They'll also have a two pages containing their saved trips and their own created trips. On either page, selecting a trip will lead them to the map view.</p>
+					<img src="imgs/roadrunner/emily-paperprototype2.png" alt = "Emily Paper Prototype 2">
+					<p><i>Arlen</i> - This is also an alternative design of the explore page of our application. It instead tries to put suggested locations on a single map based on starting point which allows points to be continually generated and show up on the map as the user browses around. Futhermore, options are searchable and filterable in this iteration of the explore map.</p>
+					<img src="imgs/roadrunner/arlen-paperprototype2.JPG" alt="Arlen Paper Prototype 2">
+					<p><i>Mohsin</i> - This is a prototype of the explore page in our app. It would display lists in the nearby area and users would scroll through the list to choose one they want. If they were looking for a specific list by name, they would use to search bar. Users also have to option to narrow the number of displayed lists with the sort and filter buttons. They would be able to sort by distance or number of locations and filter by tags. Each list displayed would have its name, the locations it contains, and the tags associated with it. On desktop, each list would also show a minimized map view of the overall route.</p>
+					<img src="imgs/roadrunner/mohsin-paperprototype2.jpg" alt="Mohsin Paper Prototype 2">
+
+					<h5 class="subheaders">Fourth Iteration</h5>
+					<p>For this iteration, we worked on adding tags to the lists and creating the basic layouts of the Explore and Create pages.</p>
+					<p>We added a tagging feature for our lists to allow users to easily search and filter when exploring new destinations.</p>
+					<img src="imgs/roadrunner/milestone11-1.png" alt="RoadRunner Tagging Feature">
+					<p>We also created the Explore page (with placeholder images for now). Since most of our paper prototypes used cards/a grid design, we went with that. It's also familiar to users (many grid layouts - Instagram, Pinterest). It has a search bar that will allow users to search and filter through lists. Each card will link back to a page that is similar to our homepage/map page that has the list of places and a map associated with it. As you can see, if you hover over a card, it will display the Trip Name as well as the mood and tags associated with the list.</p>
+					<img src="imgs/roadrunner/milestone11-2.png" alt="RoadRunner Explore Page">
+					<p>We also started working on the Create page. We decided to keep the layout the same as the default list page, since users will be more familiar and comfortable with it. It keeps the UI consistent. It has similar functionality to the default list page but the directions have been altered to accommodate the creation of a new list. Ultimately, all of the customization features in the default list will be moved to the Create page.</p>
+					<img src="imgs/roadrunner/milestone11-3.png" alt="RoadRunner Create Page">
+					<h6>Feedback</h6>
+					<ul>
+						<li>Would like to see time & distance between each location (will give users a general sense of how far apart places are).</li>
+						<li>Like the tags, but would like to be able to sort and filter them.</li>
+					</ul>
+
+					<h5 class="subheaders">Fifth Iteration</h5>
+					<p>We focused on the Create page functionality and User Profile page. We had been incremently working on the backend to set up the database for user accounts in order to allow users to favorite lists and reference them again later on. We also worked on displaying the duration between each place on the list based on previous feedback.</p>
+					<p>Here, users can create a new list of destinations. Also, we changed the infoWindow content of the markers so instead of just showing the address, it now displays both the name of the location and the actual address, so that users don't have to remember which address corresponds to which location.</p>
+					<img src="imgs/roadrunner/milestone13-1.png" alt="RoadRunner Create Page 2">
+					<p>This is the UI for the profile page, which has separate tabs for the user's lists, their favorites and an option to edit their profile information.</p>
+					<img src="imgs/roadrunner/milestone13-2.png" alt="RoadRunner Profile Page">
+					<h6>Feedback</h6>
+					<ul>
+						<li>Would like to see total trip time.</li>
+						<li>Needs option to start from user's current location.</li>
+						<li>Needs functioning explore feature.</li>
+						<li>Like the simple and intuitive UI.</li>
+					</ul>
+
+					<h5 class="subheaders">Last Iteration</h5>
+					<p>This was our last iteration, so it was basically finishing implementing the rest of our features, like the Explore page functionality. We couldn't get to all our planned features ("mood" of list became a more general "tag" feature) and fully flesh out our UI (like the temp Explore page card backgrounds would ideally be the path route of that particular trip list), but we did all we could in the time we had.</p>
+					<p>This last iteration was implementing the Explore page, so that lists would actually populate on the page and fleshing out the rest of the UI for that page. We also included a toggle (checkbox) for starting from the user's current location on the list/trip view page. Furthermore, the path will automatically update when you add or remove a location, so that users no longer need a "Submit" button (thus, removing a step in their process).</p>
+					<h6>Features</h6>
+					<p>Here, the user is signed in (as noted by the navbar - has email in upper right corner and ability to view their own lists + favorites). The user is almost done creating their list. They've added the name, description, locations and a tag.</p>
+					<img src="imgs/roadrunner/create.png" alt="RoadRunner Create Page - Final">
+					<p>After they click the "Submit" button, they'll see this page that gets generated with the trip they just created.</p>
+					<img src="imgs/roadrunner/create2.png" alt="RoadRunner After Create">
+					<p>Here, users can explore lists other users have created. There is an ability to sort by filters as well as typing in the search bar the names of lists or tags.</p>
+					<img src="imgs/roadrunner/explore-final.png" alt="RoadRunner Explore Page - Final">
+					<p>Once the user clicks on a trip/card, they can view it. If signed in, the user can favorite the list and view it from their "Favorites".</p>
+					<img src="imgs/roadrunner/otherUserList.png" alt="RoadRunner Other User's List">
+					<p>Users can view their own lists from their profile.</p>
+					<img src="imgs/roadrunner/mylists.png" alt="RoadRunner My Lists">
+					<p>Users can also view their favorites from their profile.</p>
+					<img src="imgs/roadrunner/myfavs.png" alt="RoadRunner My Favorites">
+					<p>Users can also update their own profiles.</p>
+					<img src="imgs/roadrunner/updateprofile.png" alt="RoadRunner Update Profile">
+
+					<p>This is our final design on mobile.</p>
+					<div class="row">
+						<div class="six columns">
+							<img src="imgs/roadrunner/mobile1.png" alt="RoadRunner Mobile View 1">
+						</div>
+						<div class="six columns">
+							<img src="imgs/roadrunner/mobile2.png" alt="RoadRunner Mobile View 2">
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="six columns">
+							<img src="imgs/roadrunner/mobile3.png" alt="RoadRunner Mobile View 3">
+						</div>
+						<div class="six columns">
+							<img src="imgs/roadrunner/mobile4.png" alt="RoadRunner Mobile View 4">
+						</div>
+					</div>
+
+
+
 				</div>
 			</div>
 		</div>
 	</div>
 
+	<!-- Bucket Modal -->
 	<div id="bucket-modal" class="modal">
 		<div class="modal-content">
 			<span class="close">&times;</span>
@@ -247,6 +405,7 @@
 		</div>
 	</div>
 
+	<!-- MOPA Modal -->
 	<div id="mopa-modal" class="modal">
 		<div class="modal-content">
 			<span class="close">&times;</span>
