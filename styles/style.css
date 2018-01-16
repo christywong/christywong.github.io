@@ -278,7 +278,8 @@ hr {
 	width: 100%;
 	margin-bottom: 15px;
 }
-#bucket-modal .modal-content .button {
+#bucket-modal .modal-content .button,
+#lemongrass-modal .modal-content .button {
 	margin-bottom: 20px;
 	margin-right: 20px;
 }
